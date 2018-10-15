@@ -1,0 +1,21 @@
+{
+  "name": "cricketapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "javed",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "es6-promise": "^4.2.5",
+    "express": "^4.16.4",
+    "redis": "^2.8.0",
+    "request": "^2.88.0"
+  }
+}
