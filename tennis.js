@@ -4,9 +4,9 @@ var http = require("http");
 
 var async = require("async");
     client = redis.createClient();
-  
+
     //Delay of 5 mili seconds
-    var delay = 100;
+    var delay = 10;
     var i = 1;
     async.forever(
 
@@ -24,11 +24,11 @@ var async = require("async");
             }else{
               client.set("tennis" , result.body, redis.print);
                     setTimeout(function() {
-                       console.log(i++)      
+                       console.log(i++)
                         next();
-                        
+
                     }, delay)
-            
+
               }
             });
         },
@@ -36,5 +36,3 @@ var async = require("async");
             console.error(err);
         }
     );
-
-
